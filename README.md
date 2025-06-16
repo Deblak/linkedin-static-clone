@@ -9,4 +9,6 @@ A responsive static replica of the LinkedIn 2024 interface, built as an integrat
 I started by designing a zoning of the page, then translated it into colored layout blocks.  
 The structure was built mobile-first, and progressively refined until reaching the final result.
 
-![Zoning preview](./ressources/zoning-preview.png)
+#### Zoning
+
+<img src="https://github.com/user-attachments/assets/6e0db2a5-90b0-49f3-9a89-d04f31a79cce" alt="image" width="600">
