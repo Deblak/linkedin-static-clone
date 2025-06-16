@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fil d'actualité | LinkedIn</title>
+    <!--CSS-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="style.css">
+    <!-- JS after CSS-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+</head>
+
+<body class="backgroundColor">
+    <header class="bg-light sticky-top">
+        <div class="container d-flex flex-row align-items-center">
+            <a class="px-2 linkedIn" href="#"><i class="bi bi-linkedin h2"></i></a>
+
+            <div class="">
+                <form class="container-fluid" role="search">
+                    <div class="input-group">
+                        <button class="input-group-text" id="basic-addon1"> <i class="bi bi-search text-secondary"></i>
+                        </button>
+                        <!--<input type="text" class="form-control" placeholder="Recherche">-->
+                    </div>
+                </form>
+            </div>
+            <nav class="navbar navbar-expand bg-light flex-grow-1 w-100 small-text">
+                <ul class="mb-0 text-secondary row row-cols-5 text-center w-100">
+                    <li class="nav-item list-group-item">
+                        <a class="nav-link" href="#"><i class="bi bi-house-door-fill h5"></i>
+                            <span class="d-none d-md-block" id="navbarSupportedContent">Accueil</span></a>
+                    </li>
+                    <li class="nav-item list-group-item">
+                        <a class="nav-link" href="#"><i class="bi bi-people-fill h5"></i>
+                            <span class="d-none d-md-block">Réseau</span></a>
+                    </li>
+                    <li class="nav-item list-group-item">
+                        <a class="nav-link" href="#"><i class="bi bi-wallet-fill h5"></i>
+                            <span class="d-none d-md-block">Offres d'emploi</span></a>
+                    </li>
+                    <li class="nav-item list-group-item">
+                        <a class="nav-link" href="#"><i class="bi bi-chat-dots-fill h5"></i>
+                            <span class="d-none d-md-block">Messagerie</span></a>
+                    </li>
+                    <li class="nav-item list-group-item">
+                        <a class="nav-link" href="#"><i class="bi bi-bell-fill h5"></i>
+                            <span class="d-none d-md-block">Notifications</span></a>
+                    </li>
+                </ul>
+
+                <!--Menu burger mobile first-->
+                <ul class="collapse navbar-collapse mb-0 text-secondary text-center">
+                    <li class="nav-item list-group-item d-none d-md-block">
+                        <a class="nav-link" href="#"><i class="bi bi-person-circle h5"></i>
+                            <span>Vous</span></a>
+                    </li>
+                    <li class="nav-item list-group-item d-none d-md-block">
+                        <a class="nav-link" href="#"><i class="bi bi-grid-3x3-gap-fill h5"></i>
+                            <span>Pour les entreprises</span></a>
+                    </li>
+                    <li class="nav-item list-group-item d-none d-md-block">
+                        <a href="#" class="secondaryColor">Obtnez Premium pour 0 EUR</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="row mx-auto justify-content-md-center mt-md-3">
+
+        <!--#1 Profil utilisateur-->
+        <section class="col-md-2">
+            <article class="card">
+                <img src="./ressources/banner.png" class="card-img-top" alt="user banner">
+                <div class="card-body text-center">
+                    <h5 class="h6">Jane Doe</h5>
+                    <p class="small-text text-secondary">Développeuse</p>
+                </div>
+                <ul class="list-group list-group-flush rounded-bottom d-none d-md-inline small-text">
+                    <li class="list-group-item d-flex justify-content-between">
+                        <div>
+                            <span class="text-secondary">Relations</span>
+                            <div class="fw-semibold">Développez votre réseau</div>
+                        </div>
+                        <span class="linkedIn">328</span>
+                    </li>
+                    <li class="list-group-item">
+                        <span class="text-secondary">Apprenez de nouvelles compétences avec premium</span>
+                        <div class="fw-semibold"><img src="./ressources/icone-premium.PNG" alt="icone compte premium"
+                                class="icone-Width"> Essayez Premium pour 0 EUR</div>
+                    </li>
+                    <li class="list-group-item fw-semibold text-secondary"><i class="bi bi-bookmark-fill"></i> Mes
+                        éléments</li>
+                </ul>
+                <!--Détails pour mobile -->
+                <details class="d-md-none backgroundColor p-2 dropdown">
+                    <summary class=" text-center">Voir plus</summary>
+                    <ul class="list-group list-group-flush rounded-bottom small-text">
+                        <li class="list-group-item d-flex justify-content-between">
+                            <div>
+                                <span class="text-secondary">Relations</span>
+                                <div class="fw-bold">Développez votre réseau</div>
+                            </div>
+                            <span class="linkedIn">328</span>
+                        </li>
+                        <li class="list-group-item">
+                            <span class="text-secondary">Apprenez de nouvelles compétences avec premium</span>
+                            <div class="fw-bold">Essayez Premium pour 0 EUR</div>
+                        </li>
+                        <li class="list-group-item fw-bold">Mes éléments</li>
+                    </ul>
+                    <article class="card mt-1">
+                        <div class="card-body row align-items-center">
+                            <div class="small-text fw-semibold linkedIn col-6">
+                                <a class="nav-link" href="http://" target="_blank" rel="noopener noreferrer">Groupes</a>
+                                <a class="nav-link" href="http://" target="_blank"
+                                    rel="noopener noreferrer">Événements</a>
+                                <a class="nav-link" href="http://" target="_blank" rel="noopener noreferrer">Hashtags
+                                    suivis</a>
+                            </div>
+                            <div class="col-6 text-end">
+                                <i class="bi bi-plus-lg"></i>
+                            </div>
+                            <div class="text-secondary col-12 small-text fw-semibold">
+                                <hr>
+                                <a class="nav-link text-center"
+                                    href="https://www.linkedin.com/mynetwork/discover-hub/?lipi=urn%3Ali%3Apage%3Ad_flagship3_feed%3Bq7jgADgvSVqE%2F9iz%2Bqe62w%3D%3D"
+                                    target="_blank" rel="noopener noreferrer">En découvrir plus</a>
+                            </div>
+                        </div>
+                    </article>
+                </details>
+            </article>
+            <article class="card d-none d-md-block mt-2">
+                <div class="card-body row align-items-center">
+                    <div class="small-text fw-semibold linkedIn col-6">
+                        <a class="nav-link" href="http://" target="_blank" rel="noopener noreferrer">Groupes</a>
+                        <a class="nav-link" href="http://" target="_blank" rel="noopener noreferrer">Événements</a>
+                        <a class="nav-link" href="http://" target="_blank" rel="noopener noreferrer">Hashtags suivis</a>
+                    </div>
+                    <div class="col-6 text-end">
+                        <i class="bi bi-plus-lg"></i>
+
+                    </div>
+                    <div class="text-secondary col-12 small-text fw-semibold">
+                        <hr>
+                        <a class="nav-link text-center"
+                            href="https://www.linkedin.com/mynetwork/discover-hub/?lipi=urn%3Ali%3Apage%3Ad_flagship3_feed%3Bq7jgADgvSVqE%2F9iz%2Bqe62w%3D%3D"
+                            target="_blank" rel="noopener noreferrer">En découvrir plus</a>
+                    </div>
+                </div>
+            </article>
+        </section>
+
+        <main class="col-md-5">
+            <!--#3 Contenu pour poster un message-->
+            <section class="card">
+                <div class="card-body">
+                    <div class="row g-2 align-items-center">
+                        <img src="./ressources/avatar.png" class="avatarArticle rounded-circle"
+                            alt="Consulter le profil pour Jane Doe">
+                        <button type="button"
+                            class="btn btn-outline-secondary col rounded-pill text-start fw-semibold buttonHeight">Commencer
+                            un post</button>
+                    </div>
+                    <div class="d-flex justify-content-around align-items-center">
+                        <button type="button" class="btn text-secondary">
+                            <i class="bi bi-card-image fs-5 linkedIn"></i>
+                            Médias
+                        </button>
+                        <button type="button" class="btn text-secondary">
+                            <i class="bi bi-calendar3 fs-5 eventColor"></i>
+                            Événement
+                        </button>
+                        <button type="button" class="btn text-secondary">
+                            <i class="bi bi-blockquote-left fs-5 articleColor"></i>
+                            Rédiger un article
+                        </button>
+                    </div>
+
+                </div>
+
+
+            </section>
+
+            <!--#4 Fil d'actualité-->
+            <section class="bg-light">
+                <article class="backgroundColor p-2 row row-col-2">
+                    <span class="small-text col-6">Sélectionner la vue du fil d'actualité:</span>
+                    <details class="col-6 small-text">
+                        <summary>Les plus pertinents d'abord</summary>
+                        <p>#2 Dropdown menu :
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odio pariatur, quae tempore
+                            voluptas quia,
+                            iusto, saepe reprehenderit porro facere quasi maiores hic corporis odit impedit deleniti
+                            dicta sit?
+                            Debitis, eveniet?</p>
+                    </details>
+                </article>
+
+                <article class="card mb-2">
+                    <div class="card-body">
+                        <header class="d-flex justify-content-between bg-white">
+                            <div class="row mb-1">
+                                <img src="./ressources/avatar2.png" class="img-fluid rounded-circle avatarArticle col-4"
+                                    alt="user picture">
+                                <div class="col">
+                                    <div class="fw-semibold">Camille Lambert
+                                        <span class="text-secondary">• 2e</span>
+                                        <p class="small-text text-secondary m-0">Freelance</p>
+                                        <p class="small-text text-secondary m-0">7 h <i
+                                                class="bi bi-globe-americas"></i></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="fs-4 text-secondary">
+                                <i class="bi bi-three-dots"></i>
+                                <i class="bi bi-x"></i>
+                            </div>
+                        </header>
+                        <p class="mb-0">Bye bye</p>
+                    </div>
+                    <img src="./ressources/memeFriendship.jpg" class="card-img-bottom"
+                        alt="Meme : Friendship ended with netbeans, now eclipse is my best friend">
+
+                    <div class="card-footer bg-transparent text-center text-secondary row align-items-center justify-content-between">
+                        <div class="col d-flex align-items-center justify-content-evenly">
+                            <i class="bi bi-hand-thumbs-up fs-5"></i>
+                            <span class="d-none d-md-block fw-semibold small-text">J'aime</span>
+                        </div>
+                        <div class="col d-flex align-items-center justify-content-evenly">
+                            <i class="bi bi-chat-text fs-5"></i>
+                            <span class="d-none d-md-block fw-semibold small-text">Commenter</span>
+                        </div>
+                        <div class="col d-flex align-items-center justify-content-evenly">
+                            <i class="bi bi-repeat fs-5"></i>
+                            <span class="d-none d-md-block fw-semibold small-text">Republier</span>
+                        </div>
+                        <div class="col d-flex align-items-center justify-content-evenly">
+                            <i class="bi bi-send-fill fs-5"></i>
+                            <span class="d-none d-md-block fw-semibold small-text">Envoyer</span>
+                        </div>
+                    </div>
+                </article>
+            </section>
+        </main>
+        <div class="col-md-3">
+            <!--#5 Actualités-->
+            <aside class="card">
+                <div class="card-body">
+                    <div class="d-flex justify-content-between">
+                        <p class="fw-semibold">LinkedIn Actualités</p>
+                        <i class="bi bi-info-square-fill"></i>
+                    </div>
+                    <ul>
+                        <li><span class="fw-semibold">
+                                Faire entretenir ses bureaux le jour
+                            </span>
+                            <br><span class="small-text text-secondary">Il y a 6 j</span>
+                        </li>
+                        <li><span class="fw-semibold">
+                                L'art de répondre à un recruteur
+                            </span>
+                            <br><span class="small-text text-secondary">Il y a 9 j</span>
+                        </li>
+                        <li><span class="fw-semibold">
+                                Faut-il craindre une bulle technologique?
+                            </span>
+                            <br><span class="small-text text-secondary">Il y a 5 j</span>
+                        </li>
+                        <li><span class="fw-semibold">
+                                Une loi pour freiner la fast-fashion?
+                            </span>
+                            <br><span class="small-text text-secondary">Il y a 4 j</span>
+                        </li>
+                        <li><span class="fw-semibold">
+                                La fin du steak de soja
+                            </span>
+                            <br><span class="small-text text-secondary">Il y a 2 j</span>
+                        </li>
+                    </ul>
+                </div>
+            </aside>
+
+            <!--Footer-->
+            <footer class="backgroundColor text-center mt-1 p-2">
+                <p>Accessibilité : partiellement conforme</p>
+                <ul class="small-text text-secondary listNone p-0 d-flex flex-wrap justify-content-evenly">
+                    <li><a href="http://" target="_blank" rel="noopener noreferrer"></a>
+                        <span>Infos</span>
+                    </li>
+                    <li><a href="http://" target="_blank" rel="noopener noreferrer"></a>
+                        <span>Accessibilité</span>
+                    </li>
+                    <li><a href="http://" target="_blank" rel="noopener noreferrer"></a>
+                        <span>Assistance clientèle</span>
+                    </li>
+                    <li><a href="http://" target="_blank" rel="noopener noreferrer"></a>
+                        <span>Conditions générales et confidentialité</span>
+                    </li>
+                    <li><a href="http://" target="_blank" rel="noopener noreferrer"></a>
+                        <span>Préférences Pubs</span>
+                    </li>
+                    <li><a href="http://" target="_blank" rel="noopener noreferrer"></a>
+                        <span>Publicité</span>
+                    </li>
+                    <li><a href="http://" target="_blank" rel="noopener noreferrer"></a>
+                        <span>Solutions professionnelles</span>
+                    </li>
+                    <li><a href="http://" target="_blank" rel="noopener noreferrer"></a>
+                        <span>Téléchargez l'application LinkedIn</span>
+                    </li>
+                    <li><a href="http://" target="_blank" rel="noopener noreferrer"></a>
+                        <span>Plus</span>
+                    </li>
+                </ul>
+            </footer>
+        </div>
+    </section>
+
+</body>
+
+</html>

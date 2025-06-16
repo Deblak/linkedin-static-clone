@@ -1,0 +1,51 @@
+:root {
+    /* Couleurs principales */
+    --linkedIn: #0a66c2ff;
+    --secondaryColor: #666666ff;
+    --backgroundColor: #f4f2eeff;
+    --eventColor: #c37d16ff;
+    --articleColor: #e06847ff;
+}
+.linkedIn{
+    color: var(--linkedIn);
+}
+.secondaryColor{
+    color: var(--secondaryColor);
+}
+
+.backgroundColor{
+    background-color: var(--backgroundColor);
+}
+.eventColor{
+    color: var(--eventColor);
+}
+.articleColor{
+    color: var(--articleColor);
+}
+
+/*Remplacement fs-6 de bootstrap : */
+.small-text{
+    font-size: small;
+}
+.avatar{
+    position: absolute;
+    top: 23%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.avatarArticle{
+    height: 70px;
+    width: auto;
+}
+
+.icone-Width{
+    width: 16px;;
+}
+.buttonHeight{
+    height: 3rem;
+}
+
+.listNone{
+    list-style: none;
+}
